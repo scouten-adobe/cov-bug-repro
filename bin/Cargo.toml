@@ -1,0 +1,24 @@
+[package]
+name = "bin"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.31"
+base64 = "0.12.2"
+dirs = "3.0"
+env_logger = "0.7.1"
+funty = "=1.1.0"
+image = "0.23.10"
+lib = { path = "../lib" }
+log = "0.4.11"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+serde_json = "1.0"
+structopt = "0.3"
+tempfile = "3.2.0" 
+thiserror = "1.0.20"
+
+[dev-dependencies]
+assert_cmd = "0.10"
+predicates = "1"
