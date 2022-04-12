@@ -23,7 +23,7 @@ LLVM version: 14.0.0
 
 I _think_ the key feature in this bug is that there are a lot of dependencies.
 
-When watching `top` output while running the "with coverage" case below, I noticed a _lot_ of CPU activity in `rustc` _while_ the `bin` project was running its unit tests. I suspect there's a race condition between running the `bin` unit tests and the `lib` doc tests that does not occur with code coverage disabled.
+When watching `top` output while running the "with coverage" case below, I noticed a _lot_ of CPU activity in `rustc` _while_ the `bin` project was running its integration test. I suspect there's a race condition between running the `bin` integration test and the `lib` doc tests that does not occur with code coverage disabled.
 
 ## Running Without Code Coverage
 
